@@ -5,6 +5,11 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
 #navigation {
     background-color: white;
     display: inline;
@@ -168,6 +173,148 @@ body {
     background-color: #F4F4F4;
     margin-right: 10px;
 }
+
+.mapAddress {
+    display: inline-flex;
+    justify-content: start;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    display: inline;
+    width: 100%;
+    height: 35px;
+    margin-right: 15px;
+    border-radius: 7px;
+    border: 2px solid rgb(189, 189, 189);
+    padding: 10px;
+}
+
+.searchButton {
+    display: inline;
+    width: 70px;
+    height: 35px;
+    margin: 0 auto;
+    border-radius: 7px;
+    background-color: #FDF7EE;
+}
+
+.mapInteract {
+    height: 330px;
+    background-color: white;
+}
+
+.mapHours {
+    background-color: white;
+}
+
+.mapHours p1 {
+    width: auto;
+    display: block;
+}
+
+.mapGraph {
+    background-color: white;
+}
+
+.mapGraphdisplay {
+    width: 100%;
+    height: 100px;
+}
+
+.mapGraph p1 {
+    display: block;
+}
+
+.mapGraph span {
+    font-weight: bold;
+}
+
+.reserveButton {
+    width: 100%;
+    height: 35px;
+    background-color: #E9973E;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+.myWorkout {
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 7px rgb(215, 215, 215);
+}
+
+.myWorkoutdisplay {
+    display: flex;
+    width: auto;
+    height: 123px;
+    background-image: url(../images/treadmill-testing-0367-1578930314.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 0px 15px;
+    align-items: center;
+    color: white;
+}
+
+.myWorkouttext {
+    text-align: center;
+    padding: 30px;
+}
+
+.myWorkouttext img {
+    border-radius: 7px;
+    width: 80px;
+    height: 80px;
+}
+
+#reserveOptions {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.reserveList {
+    display: block;
+    width: 100%;
+}
+
+.availStations {
+    display: flex;
+    justify-content: start;
+}
+
+.reserveCard {
+    display: flex;
+    background-color: white;
+    margin-bottom: 15px;
+    width: auto;
+    border-radius: 7px;
+    align-items: center;
+    padding: 5px 15px;
+    justify-content: space-between;
+}
+
+
+
+.addWorkout {
+    margin: 0 auto;
+    width: auto;
+    padding: 7px 30px;
+    color: #E9973E;
+    background-color: #FDF7EE;
+    border-radius: 7px;
+}
+
+
+
+
+
 
 
 
