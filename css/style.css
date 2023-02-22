@@ -31,7 +31,6 @@ a {
 
 .navButton {
     text-align: center;
-
 }
 
 .navButton img {
@@ -60,12 +59,22 @@ a {
     border-radius: 100%;
 }
 
+.pageTitle {
+    background-color: #CD3C47;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.pageTitle h1 {
+    display: inline-block;
+}
+
 #mainContent {
     background: linear-gradient(to top, #EBEBEB, white);
     width: auto;
     padding: 20px;
     margin-bottom: 90px;
-    display: block;
 }
 
 .card {
@@ -299,8 +308,6 @@ a {
     padding: 5px 15px;
     justify-content: space-between;
 }
-
-
 
 .addWorkout {
     margin: 0 auto;
