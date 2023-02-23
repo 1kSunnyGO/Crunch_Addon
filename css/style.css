@@ -1,3 +1,4 @@
+
 body {
     margin: 0 auto;
     width: 400px;
@@ -10,10 +11,12 @@ a {
     text-decoration-color: none;
 }
 
+
 #navigation {
     background-color: white;
     display: inline;
     position: fixed;
+    z-index: 3;
     bottom: 0;
     margin: 0 auto;
     width: 400px;
@@ -303,9 +306,10 @@ a {
     background-color: white;
     margin-bottom: 15px;
     width: auto;
+    height: 70px;
     border-radius: 7px;
     align-items: center;
-    padding: 5px 15px;
+    padding: 15px;
     justify-content: space-between;
 }
 
@@ -325,6 +329,7 @@ a {
     height: auto;
     display: block;
     margin-bottom: 15px;
+    position: relative;
 }
 
 .reserveDate {
@@ -341,9 +346,9 @@ a {
 .date {
     display: block;
     width: 43px;
-    height: 63px;
+    height: auto;
+    padding: 5px;
     font-weight: bold;
-    border-radius: 7px;
     justify-content: center;
 }
 
@@ -352,7 +357,7 @@ a {
     background-color: white;
     color: #F59434;
     border: none;
-    border-radius: none;
+    border-radius: 7px;
 }
 
 .btn-primary:hover {
@@ -388,21 +393,24 @@ a {
     width: auto;
     height: auto;
     background-color: white;
+    padding: 15px;
 }
 
 .spotGridContainer {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    grid-gap: 30px;
-    padding: 15px;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 .spotGridContainer > div {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #949494;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
+    padding: 10px;
+    margin: 5%;
 }
 
 .reserveTime {
@@ -410,12 +418,12 @@ a {
     width: auto;
     height: auto;
     background-color: white;
-    border: 2px solid gray;
+    border: 1px solid gray;
     border-radius: 7px;
 }
 
 .reserveTimeInfo {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     padding: 15px;
@@ -453,19 +461,50 @@ a {
 .timeGridContainer {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    font-size: smaller;
+    font-weight: bold;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 15px;
+    scrollbar-width: none;
+}
+
+.timeGridContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .timeGridContainer > div {
+    display: flex;
     border: 2px solid gray;
     border-radius: 4px;
-    padding: 10px;
+    width: auto;
+    height: 35px;
+    margin: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.reserveConfirmation {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+}
+
+.reserveCancel {
+    width: 80px;
+    height: 35px;
+    margin: 20px;
 }
     
-    
+.reserveConfirm {
+    width: 100px;
+    height: 35px;
+    margin: 20px;
+}    
     
 
 
