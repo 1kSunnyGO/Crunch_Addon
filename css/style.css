@@ -309,7 +309,72 @@ a {
     justify-content: space-between;
 }
 
+.reserveDropdown {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 7px;
+    padding: 5px 15px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.reserveContent {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.reserveDate {
+    background-color: white;
+    display: flex;
+    width: auto;
+    height: 83px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.date {
+    display: block;
+    width: 43px;
+    height: 63px;
+    font-weight: bold;
+    border-radius: 7px;
+    justify-content: center;
+}
+
+.btn-primary {
+    display: block;
+    background-color: white;
+    color: #F59434;
+    border: none;
+    border-radius: none;
+}
+
+.btn-primary:hover {
+    background-color: #F4F4F4;
+    color: #F59434;
+    border: none;
+}
+
+.btn-primary:focus {
+    background-color: #F4F4F4;
+    color: #F59434;
+    border: none;
+}
+
+.btn-primary:active {
+    background-color: #F4F4F4;
+    color: #F59434;
+    border: none;
+}
+
 .addWorkout {
+    background-color: #CD3C47;
     margin: 0 auto;
     width: auto;
     padding: 7px 30px;
@@ -318,17 +383,90 @@ a {
     border-radius: 7px;
 }
 
+.reserveSpotGrid {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: white;
+}
 
+.spotGridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 30px;
+    padding: 15px;
+}
 
+.spotGridContainer > div {
+    text-align: center;
+    background-color: #949494;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
 
+.reserveTime {
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
 
+.reserveTimeInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
 
+.timeLeft {
+    display: inline;
+    text-align: start;
+}
 
+.timeRight {
+    background-color: #1EDA31;
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
 
+.spotNumber {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.reserveTimeGrid {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 5px auto;
+}
 
+.timeGridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
 
-
+.timeGridContainer > div {
+    border: 2px solid gray;
+    border-radius: 4px;
+    padding: 10px;
+}
+    
+    
+    
 
 
 
