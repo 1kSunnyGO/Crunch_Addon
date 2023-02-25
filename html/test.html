@@ -1,0 +1,1154 @@
+<html>
+    <head>
+<!--
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+-->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <div class="btn-group btn-group-toggle reserveDate" data-toggle="buttons">
+            <label class="btn btn-secondary active date">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked>
+              <div>Mon</div>
+              <div>15</div>
+              <div>.</div>
+            </label>
+            <label class="btn btn-secondary date">
+              <input type="radio" name="options" id="option2" autocomplete="off">
+              <div>Tue</div>
+              <div>16</div>
+              <div>.</div>
+            </label>
+            <label class="btn btn-secondary date">
+              <input type="radio" name="options" id="option3" autocomplete="off">
+              <div>Wed</div>
+              <div>17</div>
+              <div>.</div>
+            </label>
+            <label class="btn btn-secondary date">
+                <input type="radio" name="options" id="option4" autocomplete="off">
+                <div>Thu</div>
+                <div>18</div>
+                <div>.</div>
+              </label>
+              <label class="btn btn-secondary date">
+                <input type="radio" name="options" id="option5" autocomplete="off">
+                <div>Fri</div>
+                <div>19</div>
+                <div>.</div>
+              </label>
+              <label class="btn btn-secondary date">
+                <input type="radio" name="options" id="option6" autocomplete="off">
+                <div>Sat</div>
+                <div>20</div>
+                <div>.</div>
+              </label>
+
+          </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="reserveList">
+              <div class="reserveCard" id="headingOne">
+                  <button class="btn reserveCollapse collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <h3>Treadmill</h3>
+                            <div class="reserveSpot">
+                            </div>
+                            <div class="reserveIcons">
+                                <img src="../images/DropdownArrow.png" alt="">
+                                <!--
+                                <img src="../images/Uncheck.png" alt="">
+                                <img src="../images/Check.png" alt="">
+                                <img src="../images/Close.png" alt="">
+                                -->
+                            </div>
+                  </button>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="reserveContent">
+                        <div class="reserveDate">
+                            <button type="button" class="btn btn-primary date">
+                                <div>Mon</div>
+                                <div>15</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Tue</div>
+                                <div>16</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Wed</div>
+                                <div>17</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Thu</div>
+                                <div>18</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Fri</div>
+                                <div>19</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Sat</div>
+                                <div>20</div>
+                                <div>.</div>
+                            </button>
+                        </div>
+                        <div class="reserveSpotGrid">
+                            <div class="spotGridContainer">
+                                <div class="item1">T1</div>
+                                <div class="item2">T2</div>
+                                <div class="item3">T3</div>
+                                <div class="item4">T4</div>
+                                <div class="item5">T5</div>
+                                <div class="item6">T6</div>
+                                <div class="item7">T7</div>
+                                <div class="item8">T8</div>
+                                <div class="item9">T9</div>
+                                <div class="item10">T10</div>
+                                <div class="item11">T11</div>
+                                <div class="item12">T12</div>
+                                <div class="item13">T13</div>
+                                <div class="item14">T14</div>
+                                <div class="item15">T15</div>
+                                <div class="item16">T16</div>
+                                <div class="item17">T17</div>
+                                <div class="item18">T18</div>
+                            </div>
+                        </div>
+                        <div class="reserveTime">
+                            <div class="reserveTimeInfo">
+                                <div class="timeLeft">
+                                    <div>Select a machine</div>
+                                    <div>Location: Gym Place 123 RD</div>
+                                    <div>Available Times:</div>
+                                </div>
+                                <div class="timeRight">
+                                    <div class="spotNumber">T6</div>
+                                </div> 
+                            </div>
+                            <div class="reserveTimeGrid">
+                                <div class="timeGridContainer">
+                                    <div class="time1">4:00am</div>
+                                    <div class="time2">4:30am</div>
+                                    <div class="time3">5:00am</div>
+                                    <div class="time4">5:30am</div>
+                                    <div class="time5">6:00am</div>
+                                    <div class="time6">6:30am</div>
+                                    <div class="time7">7:00am</div>
+                                    <div class="time8">7:30am</div>
+                                    <div class="time9">8:00am</div>
+                                    <div class="time10">8:30am</div>
+                                    <div class="time12">9:00am</div>
+                                    <div class="time13">9:30am</div>
+                                    <div class="time14">10:00am</div>
+                                    <div class="time15">10:30am</div>
+                                    <div class="time16">11:00am</div>
+                                    <div class="time17">11:30am</div>
+                                    <div class="time18">12:00pm</div>
+                                    <div class="time19">12:30pm</div>
+                                    <div class="time20">1:00am</div>
+                                    <div class="time21">1:30am</div>
+                                    <div class="time22">2:00am</div>
+                                    <div class="time23">2:30am</div>
+                                    <div class="time24">3:00am</div>
+                                    <div class="time25">3:30am</div>
+                                    <div class="time26">4:00am</div>
+                                    <div class="time27">4:30am</div>
+                                    <div class="time28">5:00am</div>
+                                    <div class="time29">5:30am</div>
+                                    <div class="time30">6:00am</div>
+                                    <div class="time31">6:30am</div>
+                                    <div class="time32">7:00am</div>
+                                    <div class="time33">7:30am</div>
+                                    <div class="time34">8:00am</div>
+                                    <div class="time35">8:30am</div>
+                                    <div class="time36">9:00am</div>
+                                    <div class="time37">9:30am</div>
+                                    <div class="time38">10:00am</div>
+                                    <div class="time39">10:30am</div>
+                                    <div class="time39">11:00am</div>
+                                </div>
+                            </div>
+                            <div class="reserveConfirmation">
+                                <button class="reserveCancel">Cancel</button>
+                                <button class="reserveConfirm">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="reserveList">
+                <div class="reserveCard" id="headingTwo">
+                    <button class="btn reserveCollapse collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <h3>Low Impact Treadmill</h3>
+                              <div class="reserveSpot">
+                              </div>
+                              <div class="reserveIcons">
+                                  <img src="../images/DropdownArrow.png" alt="">
+                                  <!--
+                                  <img src="../images/Uncheck.png" alt="">
+                                  <img src="../images/Check.png" alt="">
+                                  <img src="../images/Close.png" alt="">
+                                  -->
+                              </div>
+                    </button>
+                </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="reserveContent">
+                        <div class="reserveDate">
+                            <button type="button" class="btn btn-primary date">
+                                <div>Mon</div>
+                                <div>15</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Tue</div>
+                                <div>16</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Wed</div>
+                                <div>17</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Thu</div>
+                                <div>18</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Fri</div>
+                                <div>19</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Sat</div>
+                                <div>20</div>
+                                <div>.</div>
+                            </button>
+                        </div>
+                        <div class="reserveSpotGrid">
+                            <div class="spotGridContainer">
+                                <div class="item1">T1</div>
+                                <div class="item2">T2</div>
+                                <div class="item3">T3</div>
+                                <div class="item4">T4</div>
+                                <div class="item5">T5</div>
+                                <div class="item6">T6</div>
+                                <div class="item7">T7</div>
+                                <div class="item8">T8</div>
+                                <div class="item9">T9</div>
+                                <div class="item10">T10</div>
+                                <div class="item11">T11</div>
+                                <div class="item12">T12</div>
+                                <div class="item13">T13</div>
+                                <div class="item14">T14</div>
+                                <div class="item15">T15</div>
+                                <div class="item16">T16</div>
+                                <div class="item17">T17</div>
+                                <div class="item18">T18</div>
+                            </div>
+                        </div>
+                        <div class="reserveTime">
+                            <div class="reserveTimeInfo">
+                                <div class="timeLeft">
+                                    <div>Select a machine</div>
+                                    <div>Location: Gym Place 123 RD</div>
+                                    <div>Available Times:</div>
+                                </div>
+                                <div class="timeRight">
+                                    <div class="spotNumber">T6</div>
+                                </div> 
+                            </div>
+                            <div class="reserveTimeGrid">
+                                <div class="timeGridContainer">
+                                    <div class="time1">4:00am</div>
+                                    <div class="time2">4:30am</div>
+                                    <div class="time3">5:00am</div>
+                                    <div class="time4">5:30am</div>
+                                    <div class="time5">6:00am</div>
+                                    <div class="time6">6:30am</div>
+                                    <div class="time7">7:00am</div>
+                                    <div class="time8">7:30am</div>
+                                    <div class="time9">8:00am</div>
+                                    <div class="time10">8:30am</div>
+                                    <div class="time12">9:00am</div>
+                                    <div class="time13">9:30am</div>
+                                    <div class="time14">10:00am</div>
+                                    <div class="time15">10:30am</div>
+                                    <div class="time16">11:00am</div>
+                                    <div class="time17">11:30am</div>
+                                    <div class="time18">12:00pm</div>
+                                    <div class="time19">12:30pm</div>
+                                    <div class="time20">1:00am</div>
+                                    <div class="time21">1:30am</div>
+                                    <div class="time22">2:00am</div>
+                                    <div class="time23">2:30am</div>
+                                    <div class="time24">3:00am</div>
+                                    <div class="time25">3:30am</div>
+                                    <div class="time26">4:00am</div>
+                                    <div class="time27">4:30am</div>
+                                    <div class="time28">5:00am</div>
+                                    <div class="time29">5:30am</div>
+                                    <div class="time30">6:00am</div>
+                                    <div class="time31">6:30am</div>
+                                    <div class="time32">7:00am</div>
+                                    <div class="time33">7:30am</div>
+                                    <div class="time34">8:00am</div>
+                                    <div class="time35">8:30am</div>
+                                    <div class="time36">9:00am</div>
+                                    <div class="time37">9:30am</div>
+                                    <div class="time38">10:00am</div>
+                                    <div class="time39">10:30am</div>
+                                    <div class="time39">11:00am</div>
+                                </div>
+                            </div>
+                            <div class="reserveConfirmation">
+                                <button class="reserveCancel">Cancel</button>
+                                <button class="reserveConfirm">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="reserveList">
+              <div class="reserveCard" id="headingThree">
+                  <button class="btn reserveCollapse collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h3>Stationary Bike</h3>
+                    <div class="reserveSpot">
+                    </div>
+                    <div class="reserveIcons">
+                        <img src="../images/DropdownArrow.png" alt="">
+                        <!--
+                        <img src="../images/Uncheck.png" alt="">
+                        <img src="../images/Check.png" alt="">
+                        <img src="../images/Close.png" alt="">
+                        -->
+                    </div>
+                  </button>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="reserveContent">
+                        <div class="reserveDate">
+                            <button type="button" class="btn btn-primary date">
+                                <div>Mon</div>
+                                <div>15</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Tue</div>
+                                <div>16</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Wed</div>
+                                <div>17</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Thu</div>
+                                <div>18</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Fri</div>
+                                <div>19</div>
+                                <div>.</div>
+                            </button>
+                            <button type="button" class="btn btn-primary date">
+                                <div>Sat</div>
+                                <div>20</div>
+                                <div>.</div>
+                            </button>
+                        </div>
+                        <div class="reserveSpotGrid">
+                            <div class="spotGridContainer">
+                                <div class="item1">T1</div>
+                                <div class="item2">T2</div>
+                                <div class="item3">T3</div>
+                                <div class="item4">T4</div>
+                                <div class="item5">T5</div>
+                                <div class="item6">T6</div>
+                                <div class="item7">T7</div>
+                                <div class="item8">T8</div>
+                                <div class="item9">T9</div>
+                                <div class="item10">T10</div>
+                                <div class="item11">T11</div>
+                                <div class="item12">T12</div>
+                                <div class="item13">T13</div>
+                                <div class="item14">T14</div>
+                                <div class="item15">T15</div>
+                                <div class="item16">T16</div>
+                                <div class="item17">T17</div>
+                                <div class="item18">T18</div>
+                            </div>
+                        </div>
+                        <div class="reserveTime">
+                            <div class="reserveTimeInfo">
+                                <div class="timeLeft">
+                                    <div>Select a machine</div>
+                                    <div>Location: Gym Place 123 RD</div>
+                                    <div>Available Times:</div>
+                                </div>
+                                <div class="timeRight">
+                                    <div class="spotNumber">T6</div>
+                                </div> 
+                            </div>
+                            <div class="reserveTimeGrid">
+                                <div class="timeGridContainer">
+                                    <div class="time1">4:00am</div>
+                                    <div class="time2">4:30am</div>
+                                    <div class="time3">5:00am</div>
+                                    <div class="time4">5:30am</div>
+                                    <div class="time5">6:00am</div>
+                                    <div class="time6">6:30am</div>
+                                    <div class="time7">7:00am</div>
+                                    <div class="time8">7:30am</div>
+                                    <div class="time9">8:00am</div>
+                                    <div class="time10">8:30am</div>
+                                    <div class="time12">9:00am</div>
+                                    <div class="time13">9:30am</div>
+                                    <div class="time14">10:00am</div>
+                                    <div class="time15">10:30am</div>
+                                    <div class="time16">11:00am</div>
+                                    <div class="time17">11:30am</div>
+                                    <div class="time18">12:00pm</div>
+                                    <div class="time19">12:30pm</div>
+                                    <div class="time20">1:00am</div>
+                                    <div class="time21">1:30am</div>
+                                    <div class="time22">2:00am</div>
+                                    <div class="time23">2:30am</div>
+                                    <div class="time24">3:00am</div>
+                                    <div class="time25">3:30am</div>
+                                    <div class="time26">4:00am</div>
+                                    <div class="time27">4:30am</div>
+                                    <div class="time28">5:00am</div>
+                                    <div class="time29">5:30am</div>
+                                    <div class="time30">6:00am</div>
+                                    <div class="time31">6:30am</div>
+                                    <div class="time32">7:00am</div>
+                                    <div class="time33">7:30am</div>
+                                    <div class="time34">8:00am</div>
+                                    <div class="time35">8:30am</div>
+                                    <div class="time36">9:00am</div>
+                                    <div class="time37">9:30am</div>
+                                    <div class="time38">10:00am</div>
+                                    <div class="time39">10:30am</div>
+                                    <div class="time39">11:00am</div>
+                                </div>
+                            </div>
+                            <div class="reserveConfirmation">
+                                <button class="reserveCancel">Cancel</button>
+                                <button class="reserveConfirm">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reserveList">
+                <div class="reserveCard" id="headingFour">
+                    <button class="btn reserveCollapse collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <h3>Cable Machine</h3>
+                      <div class="reserveSpot">
+                      </div>
+                      <div class="reserveIcons">
+                          <img src="../images/DropdownArrow.png" alt="">
+                          <!--
+                          <img src="../images/Uncheck.png" alt="">
+                          <img src="../images/Check.png" alt="">
+                          <img src="../images/Close.png" alt="">
+                          -->
+                      </div>
+                    </button>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <div class="reserveContent">
+                          <div class="reserveDate">
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Mon</div>
+                                  <div>15</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Tue</div>
+                                  <div>16</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Wed</div>
+                                  <div>17</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Thu</div>
+                                  <div>18</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Fri</div>
+                                  <div>19</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Sat</div>
+                                  <div>20</div>
+                                  <div>.</div>
+                              </button>
+                          </div>
+                          <div class="reserveSpotGrid">
+                              <div class="spotGridContainer">
+                                  <div class="item1">T1</div>
+                                  <div class="item2">T2</div>
+                                  <div class="item3">T3</div>
+                                  <div class="item4">T4</div>
+                                  <div class="item5">T5</div>
+                                  <div class="item6">T6</div>
+                                  <div class="item7">T7</div>
+                                  <div class="item8">T8</div>
+                                  <div class="item9">T9</div>
+                                  <div class="item10">T10</div>
+                                  <div class="item11">T11</div>
+                                  <div class="item12">T12</div>
+                                  <div class="item13">T13</div>
+                                  <div class="item14">T14</div>
+                                  <div class="item15">T15</div>
+                                  <div class="item16">T16</div>
+                                  <div class="item17">T17</div>
+                                  <div class="item18">T18</div>
+                              </div>
+                          </div>
+                          <div class="reserveTime">
+                              <div class="reserveTimeInfo">
+                                  <div class="timeLeft">
+                                      <div>Select a machine</div>
+                                      <div>Location: Gym Place 123 RD</div>
+                                      <div>Available Times:</div>
+                                  </div>
+                                  <div class="timeRight">
+                                      <div class="spotNumber">T6</div>
+                                  </div> 
+                              </div>
+                              <div class="reserveTimeGrid">
+                                  <div class="timeGridContainer">
+                                      <div class="time1">4:00am</div>
+                                      <div class="time2">4:30am</div>
+                                      <div class="time3">5:00am</div>
+                                      <div class="time4">5:30am</div>
+                                      <div class="time5">6:00am</div>
+                                      <div class="time6">6:30am</div>
+                                      <div class="time7">7:00am</div>
+                                      <div class="time8">7:30am</div>
+                                      <div class="time9">8:00am</div>
+                                      <div class="time10">8:30am</div>
+                                      <div class="time12">9:00am</div>
+                                      <div class="time13">9:30am</div>
+                                      <div class="time14">10:00am</div>
+                                      <div class="time15">10:30am</div>
+                                      <div class="time16">11:00am</div>
+                                      <div class="time17">11:30am</div>
+                                      <div class="time18">12:00pm</div>
+                                      <div class="time19">12:30pm</div>
+                                      <div class="time20">1:00am</div>
+                                      <div class="time21">1:30am</div>
+                                      <div class="time22">2:00am</div>
+                                      <div class="time23">2:30am</div>
+                                      <div class="time24">3:00am</div>
+                                      <div class="time25">3:30am</div>
+                                      <div class="time26">4:00am</div>
+                                      <div class="time27">4:30am</div>
+                                      <div class="time28">5:00am</div>
+                                      <div class="time29">5:30am</div>
+                                      <div class="time30">6:00am</div>
+                                      <div class="time31">6:30am</div>
+                                      <div class="time32">7:00am</div>
+                                      <div class="time33">7:30am</div>
+                                      <div class="time34">8:00am</div>
+                                      <div class="time35">8:30am</div>
+                                      <div class="time36">9:00am</div>
+                                      <div class="time37">9:30am</div>
+                                      <div class="time38">10:00am</div>
+                                      <div class="time39">10:30am</div>
+                                      <div class="time39">11:00am</div>
+                                  </div>
+                              </div>
+                              <div class="reserveConfirmation">
+                                  <button class="reserveCancel">Cancel</button>
+                                  <button class="reserveConfirm">Confirm</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reserveList">
+                <div class="reserveCard" id="headingFive">
+                    <button class="btn reserveCollapse collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <h3>Resistance Machine</h3>
+                      <div class="reserveSpot">
+                      </div>
+                      <div class="reserveIcons">
+                          <img src="../images/DropdownArrow.png" alt="">
+                          <!--
+                          <img src="../images/Uncheck.png" alt="">
+                          <img src="../images/Check.png" alt="">
+                          <img src="../images/Close.png" alt="">
+                          -->
+                      </div>
+                    </button>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <div class="reserveContent">
+                          <div class="reserveDate">
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Mon</div>
+                                  <div>15</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Tue</div>
+                                  <div>16</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Wed</div>
+                                  <div>17</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Thu</div>
+                                  <div>18</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Fri</div>
+                                  <div>19</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Sat</div>
+                                  <div>20</div>
+                                  <div>.</div>
+                              </button>
+                          </div>
+                          <div class="reserveSpotGrid">
+                              <div class="spotGridContainer">
+                                  <div class="item1">T1</div>
+                                  <div class="item2">T2</div>
+                                  <div class="item3">T3</div>
+                                  <div class="item4">T4</div>
+                                  <div class="item5">T5</div>
+                                  <div class="item6">T6</div>
+                                  <div class="item7">T7</div>
+                                  <div class="item8">T8</div>
+                                  <div class="item9">T9</div>
+                                  <div class="item10">T10</div>
+                                  <div class="item11">T11</div>
+                                  <div class="item12">T12</div>
+                                  <div class="item13">T13</div>
+                                  <div class="item14">T14</div>
+                                  <div class="item15">T15</div>
+                                  <div class="item16">T16</div>
+                                  <div class="item17">T17</div>
+                                  <div class="item18">T18</div>
+                              </div>
+                          </div>
+                          <div class="reserveTime">
+                              <div class="reserveTimeInfo">
+                                  <div class="timeLeft">
+                                      <div>Select a machine</div>
+                                      <div>Location: Gym Place 123 RD</div>
+                                      <div>Available Times:</div>
+                                  </div>
+                                  <div class="timeRight">
+                                      <div class="spotNumber">T6</div>
+                                  </div> 
+                              </div>
+                              <div class="reserveTimeGrid">
+                                  <div class="timeGridContainer">
+                                      <div class="time1">4:00am</div>
+                                      <div class="time2">4:30am</div>
+                                      <div class="time3">5:00am</div>
+                                      <div class="time4">5:30am</div>
+                                      <div class="time5">6:00am</div>
+                                      <div class="time6">6:30am</div>
+                                      <div class="time7">7:00am</div>
+                                      <div class="time8">7:30am</div>
+                                      <div class="time9">8:00am</div>
+                                      <div class="time10">8:30am</div>
+                                      <div class="time12">9:00am</div>
+                                      <div class="time13">9:30am</div>
+                                      <div class="time14">10:00am</div>
+                                      <div class="time15">10:30am</div>
+                                      <div class="time16">11:00am</div>
+                                      <div class="time17">11:30am</div>
+                                      <div class="time18">12:00pm</div>
+                                      <div class="time19">12:30pm</div>
+                                      <div class="time20">1:00am</div>
+                                      <div class="time21">1:30am</div>
+                                      <div class="time22">2:00am</div>
+                                      <div class="time23">2:30am</div>
+                                      <div class="time24">3:00am</div>
+                                      <div class="time25">3:30am</div>
+                                      <div class="time26">4:00am</div>
+                                      <div class="time27">4:30am</div>
+                                      <div class="time28">5:00am</div>
+                                      <div class="time29">5:30am</div>
+                                      <div class="time30">6:00am</div>
+                                      <div class="time31">6:30am</div>
+                                      <div class="time32">7:00am</div>
+                                      <div class="time33">7:30am</div>
+                                      <div class="time34">8:00am</div>
+                                      <div class="time35">8:30am</div>
+                                      <div class="time36">9:00am</div>
+                                      <div class="time37">9:30am</div>
+                                      <div class="time38">10:00am</div>
+                                      <div class="time39">10:30am</div>
+                                      <div class="time39">11:00am</div>
+                                  </div>
+                              </div>
+                              <div class="reserveConfirmation">
+                                  <button class="reserveCancel">Cancel</button>
+                                  <button class="reserveConfirm">Confirm</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reserveList">
+                <div class="reserveCard" id="headingSix">
+                    <button class="btn reserveCollapse collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      <h3>Rowing Machine</h3>
+                      <div class="reserveSpot">
+                      </div>
+                      <div class="reserveIcons">
+                          <img src="../images/DropdownArrow.png" alt="">
+                          <!--
+                          <img src="../images/Uncheck.png" alt="">
+                          <img src="../images/Check.png" alt="">
+                          <img src="../images/Close.png" alt="">
+                          -->
+                      </div>
+                    </button>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <div class="reserveContent">
+                          <div class="reserveDate">
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Mon</div>
+                                  <div>15</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Tue</div>
+                                  <div>16</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Wed</div>
+                                  <div>17</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Thu</div>
+                                  <div>18</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Fri</div>
+                                  <div>19</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Sat</div>
+                                  <div>20</div>
+                                  <div>.</div>
+                              </button>
+                          </div>
+                          <div class="reserveSpotGrid">
+                              <div class="spotGridContainer">
+                                  <div class="item1">T1</div>
+                                  <div class="item2">T2</div>
+                                  <div class="item3">T3</div>
+                                  <div class="item4">T4</div>
+                                  <div class="item5">T5</div>
+                                  <div class="item6">T6</div>
+                                  <div class="item7">T7</div>
+                                  <div class="item8">T8</div>
+                                  <div class="item9">T9</div>
+                                  <div class="item10">T10</div>
+                                  <div class="item11">T11</div>
+                                  <div class="item12">T12</div>
+                                  <div class="item13">T13</div>
+                                  <div class="item14">T14</div>
+                                  <div class="item15">T15</div>
+                                  <div class="item16">T16</div>
+                                  <div class="item17">T17</div>
+                                  <div class="item18">T18</div>
+                              </div>
+                          </div>
+                          <div class="reserveTime">
+                              <div class="reserveTimeInfo">
+                                  <div class="timeLeft">
+                                      <div>Select a machine</div>
+                                      <div>Location: Gym Place 123 RD</div>
+                                      <div>Available Times:</div>
+                                  </div>
+                                  <div class="timeRight">
+                                      <div class="spotNumber">T6</div>
+                                  </div> 
+                              </div>
+                              <div class="reserveTimeGrid">
+                                  <div class="timeGridContainer">
+                                      <div class="time1">4:00am</div>
+                                      <div class="time2">4:30am</div>
+                                      <div class="time3">5:00am</div>
+                                      <div class="time4">5:30am</div>
+                                      <div class="time5">6:00am</div>
+                                      <div class="time6">6:30am</div>
+                                      <div class="time7">7:00am</div>
+                                      <div class="time8">7:30am</div>
+                                      <div class="time9">8:00am</div>
+                                      <div class="time10">8:30am</div>
+                                      <div class="time12">9:00am</div>
+                                      <div class="time13">9:30am</div>
+                                      <div class="time14">10:00am</div>
+                                      <div class="time15">10:30am</div>
+                                      <div class="time16">11:00am</div>
+                                      <div class="time17">11:30am</div>
+                                      <div class="time18">12:00pm</div>
+                                      <div class="time19">12:30pm</div>
+                                      <div class="time20">1:00am</div>
+                                      <div class="time21">1:30am</div>
+                                      <div class="time22">2:00am</div>
+                                      <div class="time23">2:30am</div>
+                                      <div class="time24">3:00am</div>
+                                      <div class="time25">3:30am</div>
+                                      <div class="time26">4:00am</div>
+                                      <div class="time27">4:30am</div>
+                                      <div class="time28">5:00am</div>
+                                      <div class="time29">5:30am</div>
+                                      <div class="time30">6:00am</div>
+                                      <div class="time31">6:30am</div>
+                                      <div class="time32">7:00am</div>
+                                      <div class="time33">7:30am</div>
+                                      <div class="time34">8:00am</div>
+                                      <div class="time35">8:30am</div>
+                                      <div class="time36">9:00am</div>
+                                      <div class="time37">9:30am</div>
+                                      <div class="time38">10:00am</div>
+                                      <div class="time39">10:30am</div>
+                                      <div class="time39">11:00am</div>
+                                  </div>
+                              </div>
+                              <div class="reserveConfirmation">
+                                  <button class="reserveCancel">Cancel</button>
+                                  <button class="reserveConfirm">Confirm</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reserveList">
+                <div class="reserveCard" id="headingSeven">
+                    <button class="btn reserveCollapse collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      <h3>Stationary Bike</h3>
+                      <div class="reserveSpot">
+                      </div>
+                      <div class="reserveIcons">
+                          <img src="../images/DropdownArrow.png" alt="">
+                          <!--
+                          <img src="../images/Uncheck.png" alt="">
+                          <img src="../images/Check.png" alt="">
+                          <img src="../images/Close.png" alt="">
+                          -->
+                      </div>
+                    </button>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <div class="reserveContent">
+                          <div class="reserveDate">
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Mon</div>
+                                  <div>15</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Tue</div>
+                                  <div>16</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Wed</div>
+                                  <div>17</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Thu</div>
+                                  <div>18</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Fri</div>
+                                  <div>19</div>
+                                  <div>.</div>
+                              </button>
+                              <button type="button" class="btn btn-primary date">
+                                  <div>Sat</div>
+                                  <div>20</div>
+                                  <div>.</div>
+                              </button>
+                          </div>
+                          <div class="reserveSpotGrid">
+                              <div class="spotGridContainer">
+                                  <div class="item1">T1</div>
+                                  <div class="item2">T2</div>
+                                  <div class="item3">T3</div>
+                                  <div class="item4">T4</div>
+                                  <div class="item5">T5</div>
+                                  <div class="item6">T6</div>
+                                  <div class="item7">T7</div>
+                                  <div class="item8">T8</div>
+                                  <div class="item9">T9</div>
+                                  <div class="item10">T10</div>
+                                  <div class="item11">T11</div>
+                                  <div class="item12">T12</div>
+                                  <div class="item13">T13</div>
+                                  <div class="item14">T14</div>
+                                  <div class="item15">T15</div>
+                                  <div class="item16">T16</div>
+                                  <div class="item17">T17</div>
+                                  <div class="item18">T18</div>
+                              </div>
+                          </div>
+                          <div class="reserveTime">
+                              <div class="reserveTimeInfo">
+                                  <div class="timeLeft">
+                                      <div>Select a machine</div>
+                                      <div>Location: Gym Place 123 RD</div>
+                                      <div>Available Times:</div>
+                                  </div>
+                                  <div class="timeRight">
+                                      <div class="spotNumber">T6</div>
+                                  </div> 
+                              </div>
+                              <div class="reserveTimeGrid">
+                                  <div class="timeGridContainer">
+                                      <div class="time1">4:00am</div>
+                                      <div class="time2">4:30am</div>
+                                      <div class="time3">5:00am</div>
+                                      <div class="time4">5:30am</div>
+                                      <div class="time5">6:00am</div>
+                                      <div class="time6">6:30am</div>
+                                      <div class="time7">7:00am</div>
+                                      <div class="time8">7:30am</div>
+                                      <div class="time9">8:00am</div>
+                                      <div class="time10">8:30am</div>
+                                      <div class="time12">9:00am</div>
+                                      <div class="time13">9:30am</div>
+                                      <div class="time14">10:00am</div>
+                                      <div class="time15">10:30am</div>
+                                      <div class="time16">11:00am</div>
+                                      <div class="time17">11:30am</div>
+                                      <div class="time18">12:00pm</div>
+                                      <div class="time19">12:30pm</div>
+                                      <div class="time20">1:00am</div>
+                                      <div class="time21">1:30am</div>
+                                      <div class="time22">2:00am</div>
+                                      <div class="time23">2:30am</div>
+                                      <div class="time24">3:00am</div>
+                                      <div class="time25">3:30am</div>
+                                      <div class="time26">4:00am</div>
+                                      <div class="time27">4:30am</div>
+                                      <div class="time28">5:00am</div>
+                                      <div class="time29">5:30am</div>
+                                      <div class="time30">6:00am</div>
+                                      <div class="time31">6:30am</div>
+                                      <div class="time32">7:00am</div>
+                                      <div class="time33">7:30am</div>
+                                      <div class="time34">8:00am</div>
+                                      <div class="time35">8:30am</div>
+                                      <div class="time36">9:00am</div>
+                                      <div class="time37">9:30am</div>
+                                      <div class="time38">10:00am</div>
+                                      <div class="time39">10:30am</div>
+                                      <div class="time39">11:00am</div>
+                                  </div>
+                              </div>
+                              <div class="reserveConfirmation">
+                                  <button class="reserveCancel">Cancel</button>
+                                  <button class="reserveConfirm">Confirm</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+
+
+          
+         
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="reserveContent">
+    <div class="reserveDate">
+        <button type="button" class="btn btn-primary date">
+            <div>Mon</div>
+            <div>15</div>
+            <div>.</div>
+        </button>
+        <button type="button" class="btn btn-primary date">
+            <div>Tue</div>
+            <div>16</div>
+            <div>.</div>
+        </button>
+        <button type="button" class="btn btn-primary date">
+            <div>Wed</div>
+            <div>17</div>
+            <div>.</div>
+        </button>
+        <button type="button" class="btn btn-primary date">
+            <div>Thu</div>
+            <div>18</div>
+            <div>.</div>
+        </button>
+        <button type="button" class="btn btn-primary date">
+            <div>Fri</div>
+            <div>19</div>
+            <div>.</div>
+        </button>
+        <button type="button" class="btn btn-primary date">
+            <div>Sat</div>
+            <div>20</div>
+            <div>.</div>
+        </button>
+    </div>
+    <div class="reserveSpotGrid">
+        <div class="spotGridContainer">
+            <div class="item1">T1</div>
+            <div class="item2">T2</div>
+            <div class="item3">T3</div>
+            <div class="item4">T4</div>
+            <div class="item5">T5</div>
+            <div class="item6">T6</div>
+            <div class="item7">T7</div>
+            <div class="item8">T8</div>
+            <div class="item9">T9</div>
+            <div class="item10">T10</div>
+            <div class="item11">T11</div>
+            <div class="item12">T12</div>
+            <div class="item13">T13</div>
+            <div class="item14">T14</div>
+            <div class="item15">T15</div>
+            <div class="item16">T16</div>
+            <div class="item17">T17</div>
+            <div class="item18">T18</div>
+        </div>
+    </div>
+    <div class="reserveTime">
+        <div class="reserveTimeInfo">
+            <div class="timeLeft">
+                <div>Select a machine</div>
+                <div>Location: Gym Place 123 RD</div>
+                <div>Available Times:</div>
+            </div>
+            <div class="timeRight">
+                <div class="spotNumber">T6</div>
+            </div> 
+        </div>
+        <div class="reserveTimeGrid">
+            <div class="timeGridContainer">
+                <div class="time1">4:00am</div>
+                <div class="time2">4:30am</div>
+                <div class="time3">5:00am</div>
+                <div class="time4">5:30am</div>
+                <div class="time5">6:00am</div>
+                <div class="time6">6:30am</div>
+                <div class="time7">7:00am</div>
+                <div class="time8">7:30am</div>
+                <div class="time9">8:00am</div>
+                <div class="time10">8:30am</div>
+                <div class="time12">9:00am</div>
+                <div class="time13">9:30am</div>
+                <div class="time14">10:00am</div>
+                <div class="time15">10:30am</div>
+                <div class="time16">11:00am</div>
+                <div class="time17">11:30am</div>
+                <div class="time18">12:00pm</div>
+                <div class="time19">12:30pm</div>
+                <div class="time20">1:00am</div>
+                <div class="time21">1:30am</div>
+                <div class="time22">2:00am</div>
+                <div class="time23">2:30am</div>
+                <div class="time24">3:00am</div>
+                <div class="time25">3:30am</div>
+                <div class="time26">4:00am</div>
+                <div class="time27">4:30am</div>
+                <div class="time28">5:00am</div>
+                <div class="time29">5:30am</div>
+                <div class="time30">6:00am</div>
+                <div class="time31">6:30am</div>
+                <div class="time32">7:00am</div>
+                <div class="time33">7:30am</div>
+                <div class="time34">8:00am</div>
+                <div class="time35">8:30am</div>
+                <div class="time36">9:00am</div>
+                <div class="time37">9:30am</div>
+                <div class="time38">10:00am</div>
+                <div class="time39">10:30am</div>
+                <div class="time39">11:00am</div>
+            </div>
+        </div>
+        <div class="reserveConfirmation">
+            <button class="reserveCancel">Cancel</button>
+            <button class="reserveConfirm">Confirm</button>
+        </div>
+    </div>
+</div>
