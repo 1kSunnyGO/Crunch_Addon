@@ -85,26 +85,26 @@ h4 {
     border-radius: 100%;
 }
 
-.crunchLogo1 {
-    margin: 0px;
-    background: none;
-    height: 84px;
-    width: 156px;
-    margin-left: 18px;
-    opacity: 70%;
-}
 
 .crunch {
     margin: 0px;
     flex-direction: row;
     display: flex;
-    gap: 45px;
 }
 
-.crunch h2 {
-    display: inline-block;
-    font-size: 24px;
-    margin-left: 7px;
+.GuestText {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.crunchLogo1 {
+    margin: 0px;
+    background: none;
+    height: 84px;
+    width: 156px;
+    opacity: 70%;
 }
 
 .pageTitle {
@@ -158,6 +158,7 @@ h4 {
     align-items: center;
     width: 100%;
     height: auto;
+    margin-bottom: -8;
 }
 
 .classOption {
@@ -186,7 +187,7 @@ h4 {
 .upcomingClass {
     display: flex;
     width: auto;
-    height: 400px;
+    height: 350px;
     align-items: center;
     text-align: center;
 }
@@ -218,7 +219,9 @@ h4 {
 
 .nutrition {
     color: white;
-    background-color: gray;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url(../images/nutrition.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .homeClub {
