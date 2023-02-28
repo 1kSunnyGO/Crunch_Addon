@@ -7,9 +7,10 @@ body {
     background-color: rgb(20, 20, 20);
 }
 
-a {
+a, a:link, a:hover, a:visited, a:active {
     text-decoration: none;
     text-decoration-color: none;
+    color: black;
 }
 
 h1{
@@ -155,7 +156,9 @@ button, button:active, button:focus {
 .refer {
     width: auto;
     color: white;
-    background-color: gray;
+    background-image: url(../images/Friends\ workingout.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .classesText {
@@ -167,10 +170,21 @@ button, button:active, button:focus {
     margin-bottom: -8;
 }
 
+.classesText h2{
+    color: rgb(102, 99, 99);
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.classesText h3{
+    color: #E9973E;
+    font-size: 16px;
+}
+
 .classOption {
     background-color: #ECE7E0;
     width: 100%;
-    height: 35px;
+    height: 25px;
     margin-bottom: 10px;
     border-radius: 7px;
     justify-content: space-around;
@@ -178,17 +192,6 @@ button, button:active, button:focus {
     display: inline-flex;
 }
 
-.classOption button {
-    width: 50%;
-    height: 90%;
-    border-radius: 7px;
-}
-
-.classButton {
-    width: 49%;
-    height: 85%;
-    display: flex;
-}
 
 .upcomingClass {
     display: flex;
@@ -225,7 +228,7 @@ button, button:active, button:focus {
 
 .nutrition {
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url(../images/nutrition.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url(../images/Protein.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -244,6 +247,17 @@ button, button:active, button:focus {
     margin-top: 20px;
 }
 
+.clubText h2{
+    color: rgb(102, 99, 99);
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.clubText h3{
+    color: #E9973E;
+    font-size: 16px;
+}
+
 .clubTopImage {
     background-color: black;
     border-top-left-radius: 7px;
@@ -257,9 +271,39 @@ button, button:active, button:focus {
     padding: 0px 60px;
 }
 
+.NoJudgments h1{
+    margin: 0px;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    margin-right: 17px;
+}
+
 .clubLocation {
     padding: 15px;
     padding-bottom: 20px;
+}
+
+.clubLocation p {
+    font-size: 15px;
+    margin: 0px;
+}
+
+.classContent p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.clubLocation h2 {
+    font-weight: 800;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.clubLocation h4 {
+    color: #E9973E;
 }
 
 .clubLocation img {
@@ -403,12 +447,12 @@ button, button:active, button:focus {
 }
 
 .selectedBox {
-    background-color: rgb(233, 253, 231);
-    border: 1px solid rgb(219, 219, 219);
+    background-color: #1EDA31;
     border-radius: 7px;
     display: flex;
     width: 60px;
     height: 50px;
+    color: white;
     font-weight: bold;
     align-items: center;
     justify-content: center;
@@ -494,7 +538,10 @@ button, button:active, button:focus {
     align-items: center;
     width: 50px;
     height: 100%;
+    color: white;
+    font-weight: bold;
     background-color: #1EDA31;
+    border-radius: 7px;
 }
 
 .hiddenContent {
@@ -531,11 +578,12 @@ button, button:active, button:focus {
     padding-top: 15px;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .date {
     display: block;
-    width: 50px;
+    width: 100%;
     height: auto;
     font-weight: bold;
     justify-content: center;
@@ -598,7 +646,6 @@ button, button:active, button:focus {
 
 .btn-secondary {
     display: block;
-    padding: 5px;
     background-color: white;
     color: #F59434;
     border: none;
@@ -678,13 +725,13 @@ button, button:active, button:focus {
     width: 100%;
     height: 100%;
     color: black;
-    background-color: rgb(241, 241, 241);
+    background-color: #f1f1f1;
     font-weight: bold;
 }
 
 .spot:hover {
     color: black;
-    background-color: rgb(227, 227, 227) ;
+    background-color: #e3e3e3 ;
 }
 
 .spot:focus {
@@ -692,7 +739,7 @@ button, button:active, button:focus {
 }
 
 .spot:not(:disabled):not(.disabled).active, .spot:not(:disabled):not(.disabled):active, .show>.spot.dropdown-toggle {
-    background-color: #F59434;
+    background-color: 42ea53;
     color: white;
 }
 
@@ -791,20 +838,28 @@ button, button:active, button:focus {
 }
     
 .reserveConfirm {
-    background-color: #42ea53;
+    background-color: #1EDA31;
     color: white;
     font-weight: bold;
     width: auto;
     height: auto;
     margin: 20px;
     padding: 5px 20px;
-    border-radius: 7px;
     border: none;
-    box-shadow: none;
-}   
+    border-radius: 7px;
+}
 
 .reserveConfirm:hover {
-    background-color: #25d236;
+    background-color: #19c12a;
+}
+
+.addWorkoutButton {
+    width: 100%;
+    height: 35px;
+    background-color: #E9973E;
+    color: white;
+    border: none;
+    border-radius: 7px;
 }
     
 .modal-content {
@@ -818,6 +873,12 @@ button, button:active, button:focus {
     display: flex;
     justify-content: space-between;
 }
+
+.modal-footer button {
+    padding: 5px 20px;
+}
+
+
 
 .timeButton {
     background-color: white;
@@ -835,25 +896,25 @@ button, button:active, button:focus {
 }
 
 .timeButton:hover {
-    background-color: #F89337;
+    background-color: #e3e3e3;
     font-weight: bold;
     display: flex;
-    border: 2px solid #F89337;
+    border: 2px solid black;
     border-radius: 4px;
     width: auto;
     height: 35px;
     margin: 5%;
-    color: white;
+    color: black;
     font-size: 14px;
     align-items: center;
     justify-content: center;
 }
 
 .timeButton:not(:disabled):not(.disabled).active, .timeButton:not(:disabled):not(.disabled):active, .show > .timeButton.dropdown-toggle {
-    background-color: #F89337;
+    background-color: #42ea53;
     font-weight: bold;
     display: flex;
-    border: 2px solid #F89337;
+    border: 2px solid #42ea53;
     border-radius: 4px;
     width: auto;
     height: 35px;
@@ -880,6 +941,18 @@ button, button:active, button:focus {
 }
 
 
+.classButton {
+    width: 49%;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px !important;
+}
+
+.classButton:not(:disabled):not(.disabled).active, .classButton:not(:disabled):not(.disabled):active, .show > .classButton.dropdown-toggle {
+    background-color: #E9973E !important;
+    color: white !important;
+}
 
 
 
@@ -902,31 +975,30 @@ button, button:active, button:focus {
     height: auto;
     margin: 0 auto;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     margin-top: 10px;
 }
 
-.soicalIcon {
+.socialIcon {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: none;
+    width: 25px;
+    height: 25px;
+    padding: 15px;
 }
 
 .twitter {
     background-image: url(../images/twitter.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 30px;
-    height: 30px;
 }
 
 .instagram {
     background-image: url(../images/instagram.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 30px;
-    height: 30px;
 }
 
 
